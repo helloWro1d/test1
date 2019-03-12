@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("p").click(function(){
+            $(this).hide();
+        });
+        $("table tr:odd").css("color","pink");
+        $("table tr:even").css("color","green");
+        $("#btn").click(function(){
+           var i = $(":checkbox:checked");
+           alert("选中的个数为：" +  i.length);
+        });
+        $('table#tb td').length
+        $('table#tb td:last').text
+    });
+    </script>
+</head>
+<body>
+    <p>测试1</p>
+    <p>测试2</p>
+    
+    <table id="tb" style="width: 300px">
+        <tbody>
+    <tr><td>1</td><td>2</td></tr>
+    <tr><td>3</td><td>4</td></tr>
+    <tr><td>5</td><td>6</td></tr>
+    <tr><td>7</td><td>8</td></tr>
+    <tr><td>9</td><td>10</td></tr>
+    <tr><td>11</td><td>12</td></tr>
+</tbody>
+    </table>
+    <input type="checkbox" value="1" name="check" checked="checked">1
+    <input type="checkbox" value="2" name="check" >2
+    <input type="checkbox" value="3" name="check" checked="checked">3
+    <input type="button" value="你选中的个数" id="btn" >
+</body>
+</html>
